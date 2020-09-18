@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
     GameManager gM;
 
     public TMP_Text diamondNum;
+    public TMP_Text levelName;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,7 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         diamondNum.text = gM.totalDiamonds.ToString();
-
+        levelName.text = gM.levelName;
 
     }
 

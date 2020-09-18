@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public int totalDiamonds;
 
+    public string levelName;
+
 
     public void AddDiamond() {
         totalDiamonds++;

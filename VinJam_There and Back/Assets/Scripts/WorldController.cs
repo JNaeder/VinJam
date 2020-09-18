@@ -9,9 +9,13 @@ public class WorldController : MonoBehaviour
 
     bool isWorldA;
 
+    TransitionManager transMang;
     // Start is called before the first frame update
     void Start()
     {
+        transMang = FindObjectOfType<TransitionManager>();
+
+
         SwitchWorld("A");
         isWorldA = true;
         
@@ -26,8 +30,10 @@ public class WorldController : MonoBehaviour
 
     void ChangeWorlds() {
         if (Input.GetKeyDown(KeyCode.LeftShift)) {
-            //Debug.Log("Change World!");
+            Debug.Log("Change World!");
             isWorldA = !isWorldA;
+            transMang.PlayTransitionClip();
+
 
             if (isWorldA)
             {
