@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using FMODUnity;
 
 public class MainGuy_Movement : MonoBehaviour
 {
@@ -13,13 +12,20 @@ public class MainGuy_Movement : MonoBehaviour
     public float wallCheckRadius = 1f;
     public Vector2 groundCheckSize;
 
+    [FMODUnity.EventRef]
+    public string jumpSound, collectableSound;
+
     Rigidbody2D rb;
+    Animator anim;
+
+    float h;
 
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,11 +33,14 @@ public class MainGuy_Movement : MonoBehaviour
     {
         Movement();
         Jump();
+        SetAnim();
+        
     }
 
     void Movement()
     {
-            float h = Input.GetAxis("Horizontal");
+            h = Input.GetAxis("Horizontal");
+            
 
         if (IsTouchingLeft())
         {
@@ -45,12 +54,12 @@ public class MainGuy_Movement : MonoBehaviour
 
         if (h > 0)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            GetComponentInChildren<SpriteRenderer>().transform.localScale = new Vector3(1, 1, 1);
 
         }
         else if (h < 0) {
 
-            transform.localScale = new Vector3(-1, 1, 1);
+            GetComponentInChildren<SpriteRenderer>().transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 
@@ -60,6 +69,7 @@ public class MainGuy_Movement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.AddForce(Vector2.up * jumpStrength, ForceMode2D.Impulse);
+            FMODUnity.RuntimeManager.PlayOneShot(jumpSound);
         }
         if (rb.velocity.y < 0)
         {
@@ -70,8 +80,8 @@ public class MainGuy_Movement : MonoBehaviour
         }
     }
 
-    bool IsGrounded() {
-        bool _isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, checkLayer);
+    public bool IsGrounded() {
+        bool _isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f ,checkLayer);
         return _isGrounded;
     }
     bool IsTouchingLeft() {
@@ -83,6 +93,18 @@ public class MainGuy_Movement : MonoBehaviour
     {
         bool _isTouchingRight = Physics2D.OverlapCircle(rightCheck.position, wallCheckRadius, checkLayer);
         return _isTouchingRight;
+    }
+
+
+    public void PlayCollectableSound() {
+        FMODUnity.RuntimeManager.PlayOneShot(collectableSound);
+
+    }
+
+    public void SetAnim() {
+        anim.SetFloat("h", Mathf.Abs(h));
+        anim.SetBool("isGrounded", IsGrounded());
+
     }
 
     private void OnDrawGizmos()

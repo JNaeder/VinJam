@@ -1,11 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using FMODUnity;
 
 public class ResetTrigger : MonoBehaviour
 {
 
     public Transform resetPosition;
+
+    [FMODUnity.EventRef]
+    public string resetSound;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -19,6 +21,7 @@ public class ResetTrigger : MonoBehaviour
 
     void ResetPlayerPosition(MainGuy_Movement guy) {
         guy.transform.position = resetPosition.position;
+        FMODUnity.RuntimeManager.PlayOneShot(resetSound);
 
     }
 

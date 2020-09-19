@@ -1,16 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using FMODUnity;
 
 public class WorldController : MonoBehaviour
 {
     public GameObject platformsA, platformsB;
     public GameObject backgroundA, backgroundB;
+    public GameObject camEffectA, camEffectB;
+    
+    [Range(0f,1f)]
+    public float timeSpeed;
+    [Range(0f,3f)]
     public float pauseTimer;
 
-    bool isWorldA;
+    [FMODUnity.EventRef]
+    public string changeWorldsSound;
+
+    [HideInInspector]
+    public bool isWorldA;
+    bool isPaused;
+
+    float _pausedTime;
 
     TransitionManager transMang;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,15 +38,17 @@ public class WorldController : MonoBehaviour
     void Update()
     {
         ChangeWorlds();
+
+        PauseTime();
     }
 
 
     void ChangeWorlds() {
-        if (Input.GetKeyDown(KeyCode.LeftShift)) {
-            Debug.Log("Change World!");
+        if (Input.GetButtonDown("Fire1")) {
+            FMODUnity.RuntimeManager.PlayOneShot(changeWorldsSound);
+            isPaused = true;
             isWorldA = !isWorldA;
             transMang.PlayTransitionClip();
-            //StartCoroutine(PauseTime());
 
 
             if (isWorldA)
@@ -56,23 +70,42 @@ public class WorldController : MonoBehaviour
         {
             platformsA.SetActive(true);
             backgroundA.SetActive(true);
+            camEffectA.SetActive(true);
 
             platformsB.SetActive(false);
             backgroundB.SetActive(false);
+            camEffectB.SetActive(false);
         }
         else if (letter == "B") {
             platformsA.SetActive(false);
             backgroundA.SetActive(false);
+            camEffectA.SetActive(false);
 
             platformsB.SetActive(true);
             backgroundB.SetActive(true);
+            camEffectB.SetActive(true);
         }
 
     }
 
-    IEnumerator PauseTime() {
-        Time.timeScale = 0;
-        yield return new WaitForSeconds(pauseTimer);
-        Time.timeScale = 1;
-    }
+
+    public void PauseTime() {
+        
+            if (isPaused)
+            {
+                Time.timeScale = timeSpeed;
+                _pausedTime = Time.realtimeSinceStartup;
+                isPaused = false;
+            }
+
+        if (Time.realtimeSinceStartup > _pausedTime + pauseTimer)
+        {
+            Time.timeScale = 1;
+        }
+
+        }
+
+
+
+    
 }

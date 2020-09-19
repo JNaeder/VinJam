@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
@@ -17,6 +15,9 @@ public class Collectable : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player") {
             gM.AddDiamond();
+            MainGuy_Movement guy = collision.gameObject.GetComponent<MainGuy_Movement>();
+            guy.PlayCollectableSound();
+
             Destroy(gameObject);
 
         }
