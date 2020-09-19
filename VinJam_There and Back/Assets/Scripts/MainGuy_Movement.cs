@@ -41,6 +41,17 @@ public class MainGuy_Movement : MonoBehaviour
             h = Mathf.Clamp(h, -1, 0);
         }
             transform.position += new Vector3(h * speed * Time.deltaTime, 0, 0);
+
+
+        if (h > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+
+        }
+        else if (h < 0) {
+
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
     }
 
 

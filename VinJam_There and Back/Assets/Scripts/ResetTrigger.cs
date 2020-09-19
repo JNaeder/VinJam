@@ -24,8 +24,8 @@ public class ResetTrigger : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawSphere(resetPosition.position, 1f);
+        //Gizmos.color = Color.red;
+        //Gizmos.DrawSphere(resetPosition.position, 1f);
         Gizmos.color = Color.white;
         BoxCollider2D coll = GetComponent<BoxCollider2D>();
         Gizmos.DrawWireCube(transform.position, transform.localScale);

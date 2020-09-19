@@ -6,6 +6,7 @@ public class WorldController : MonoBehaviour
 {
     public GameObject platformsA, platformsB;
     public GameObject backgroundA, backgroundB;
+    public float pauseTimer;
 
     bool isWorldA;
 
@@ -33,6 +34,7 @@ public class WorldController : MonoBehaviour
             Debug.Log("Change World!");
             isWorldA = !isWorldA;
             transMang.PlayTransitionClip();
+            //StartCoroutine(PauseTime());
 
 
             if (isWorldA)
@@ -66,5 +68,11 @@ public class WorldController : MonoBehaviour
             backgroundB.SetActive(true);
         }
 
+    }
+
+    IEnumerator PauseTime() {
+        Time.timeScale = 0;
+        yield return new WaitForSeconds(pauseTimer);
+        Time.timeScale = 1;
     }
 }
