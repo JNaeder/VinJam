@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{a0056650-1307-436e-a6f6-56a1f544dba4}">
+		<property name="assetPath">
+			<value>SFX/Unlock.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.71025000000000005</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7c38d40f-ccec-40db-a8d9-89bb0a53980b}</destination>
+		</relationship>
+	</object>
+</objects>

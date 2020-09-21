@@ -13,10 +13,11 @@ public class MainGuy_Movement : MonoBehaviour
     public Vector2 groundCheckSize;
 
     [FMODUnity.EventRef]
-    public string jumpSound, collectableSound;
+    public string jumpSound, collectableSound, unlockSound;
 
     Rigidbody2D rb;
     Animator anim;
+    GameManager gm;
 
     float h;
 
@@ -26,6 +27,7 @@ public class MainGuy_Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        gm = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -97,7 +99,16 @@ public class MainGuy_Movement : MonoBehaviour
 
 
     public void PlayCollectableSound() {
-        FMODUnity.RuntimeManager.PlayOneShot(collectableSound);
+        if (gm.totalDiamonds == gm.diamondsInLevel)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(unlockSound);
+            FMODUnity.RuntimeManager.PlayOneShot(collectableSound);
+        }
+        else
+        {
+
+            FMODUnity.RuntimeManager.PlayOneShot(collectableSound);
+        }
 
     }
 

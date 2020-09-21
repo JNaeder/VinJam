@@ -19,10 +19,10 @@ public class MusicManager : MonoBehaviour
 
         }
         else {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
 
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Start is called before the first frame update

@@ -372,6 +372,7 @@ MonoBehaviour:
   groundCheckSize: {x: 1.2, y: 0.1}
   jumpSound: event:/Jump
   collectableSound: event:/Collectable
+  unlockSound: event:/Final Collectable
 --- !u!95 &1151291769767017393
 Animator:
   serializedVersion: 3

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class EndLevelDoor : MonoBehaviour
 {
@@ -15,6 +16,12 @@ public class EndLevelDoor : MonoBehaviour
 
     public SpriteRenderer sp;
 
+    [FMODUnity.EventRef]
+    public string endLevelSound;
+
+
+    int numberOfLevels;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +29,8 @@ public class EndLevelDoor : MonoBehaviour
         gm = FindObjectOfType<GameManager>();
         wm = FindObjectOfType<WorldManager>();
         wc = FindObjectOfType<WorldController>();
+        numberOfLevels = lm.FindNumbeOfLevels();
+        
     }
 
     // Update is called once per frame
@@ -46,8 +55,12 @@ public class EndLevelDoor : MonoBehaviour
         if (collision.gameObject.tag == "Player") {
             if (isOpened)
             {
-                Debug.Log("End Level");
+                if (lm.FindCurrentSceneNum() == lm.FindNumbeOfLevels() - 2) {
+                    
+                    wc.isWorldA = true;
+                }
                 SetWorldManager();
+                FMODUnity.RuntimeManager.PlayOneShot(endLevelSound);
                 lm.LoadNextScene();
 
             }

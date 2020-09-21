@@ -158,6 +158,7 @@ MonoBehaviour:
   closedSprite: {fileID: 8343737512651396940, guid: fa96fcd7ca7ce4850a466667151c124d, type: 3}
   isOpened: 0
   sp: {fileID: 2638313092999144166}
+  endLevelSound: event:/End Level
 --- !u!1 &4626947411680931765
 GameObject:
   m_ObjectHideFlags: 0

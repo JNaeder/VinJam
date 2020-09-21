@@ -24,12 +24,14 @@ public class WorldController : MonoBehaviour
 
     TransitionManager transMang;
     WorldManager wm;
+    MenuManager mm;
 
     // Start is called before the first frame update
     void Start()
     {
         transMang = FindObjectOfType<TransitionManager>();
         wm = FindObjectOfType<WorldManager>();
+        mm = FindObjectOfType<MenuManager>();
 
         if (wm.currentWorld == "A")
         {
@@ -47,8 +49,10 @@ public class WorldController : MonoBehaviour
     void Update()
     {
         ChangeWorlds();
-
-        PauseTime();
+        if (!mm.isPaused)
+        {
+            PauseTime();
+        }
     }
 
 
