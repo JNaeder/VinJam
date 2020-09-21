@@ -13,8 +13,14 @@ public class TransitionManager : MonoBehaviour
         
     }
 
-    public void PlayTransitionClip() {
-        anim.Play("Transition");
+    public void PlayTransitionAClip() {
+        anim.Play("TransitionA");
+
+    }
+
+    public void PlayTransitionBClip()
+    {
+        anim.Play("TransitionB");
 
     }
 }

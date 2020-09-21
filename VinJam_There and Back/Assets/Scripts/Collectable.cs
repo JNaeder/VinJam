@@ -10,7 +10,6 @@ public class Collectable : MonoBehaviour
         gM = FindObjectOfType<GameManager>();
     }
 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player") {

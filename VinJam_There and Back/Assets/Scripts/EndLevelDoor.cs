@@ -6,19 +6,22 @@ public class EndLevelDoor : MonoBehaviour
 {
     LevelManager lm;
     GameManager gm;
+    WorldManager wm;
+    WorldController wc;
+
+    public Sprite openSprite, closedSprite;
 
     public bool isOpened;
-    public Color closedColor, openedColor;
 
-    SpriteRenderer sp;
+    public SpriteRenderer sp;
 
     // Start is called before the first frame update
     void Start()
     {
         lm = FindObjectOfType<LevelManager>();
         gm = FindObjectOfType<GameManager>();
-
-        sp = GetComponentInChildren<SpriteRenderer>();
+        wm = FindObjectOfType<WorldManager>();
+        wc = FindObjectOfType<WorldController>();
     }
 
     // Update is called once per frame
@@ -30,10 +33,10 @@ public class EndLevelDoor : MonoBehaviour
 
         if (isOpened)
         {
-            sp.color = openedColor;
+            sp.sprite = openSprite;
         }
         else {
-            sp.color = closedColor;
+            sp.sprite = closedSprite;
 
         }
     }
@@ -44,8 +47,21 @@ public class EndLevelDoor : MonoBehaviour
             if (isOpened)
             {
                 Debug.Log("End Level");
+                SetWorldManager();
                 lm.LoadNextScene();
+
             }
         }
+    }
+
+
+    void SetWorldManager() {
+        if (wc.isWorldA) {
+            wm.ChangeCurrentWorld("A");
+        } else if (!wc.isWorldA) {
+
+            wm.ChangeCurrentWorld("B");
+        }
+
     }
 }

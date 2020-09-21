@@ -6,6 +6,7 @@ public class WorldController : MonoBehaviour
     public GameObject platformsA, platformsB;
     public GameObject backgroundA, backgroundB;
     public GameObject camEffectA, camEffectB;
+    public GameObject lightA, lightB, playerLight;
     
     [Range(0f,1f)]
     public float timeSpeed;
@@ -22,15 +23,23 @@ public class WorldController : MonoBehaviour
     float _pausedTime;
 
     TransitionManager transMang;
+    WorldManager wm;
 
     // Start is called before the first frame update
     void Start()
     {
         transMang = FindObjectOfType<TransitionManager>();
+        wm = FindObjectOfType<WorldManager>();
 
-
-        SwitchWorld("A");
-        isWorldA = true;
+        if (wm.currentWorld == "A")
+        {
+            SwitchWorld("A");
+            isWorldA = true;
+        }
+        else if (wm.currentWorld == "B") {
+            SwitchWorld("B");
+            isWorldA = false;
+        }
         
     }
 
@@ -48,7 +57,13 @@ public class WorldController : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot(changeWorldsSound);
             isPaused = true;
             isWorldA = !isWorldA;
-            transMang.PlayTransitionClip();
+            if (isWorldA)
+            {
+                transMang.PlayTransitionAClip();
+            }
+            else {
+                transMang.PlayTransitionBClip();
+            }
 
 
             if (isWorldA)
@@ -68,22 +83,30 @@ public class WorldController : MonoBehaviour
     void SwitchWorld(string letter) {
         if (letter == "A")
         {
-            platformsA.SetActive(true);
-            backgroundA.SetActive(true);
-            camEffectA.SetActive(true);
-
             platformsB.SetActive(false);
             backgroundB.SetActive(false);
             camEffectB.SetActive(false);
+            lightB.SetActive(false);
+
+            platformsA.SetActive(true);
+            backgroundA.SetActive(true);
+            camEffectA.SetActive(true);
+            lightA.SetActive(true);
+
+            playerLight.SetActive(true);
         }
         else if (letter == "B") {
             platformsA.SetActive(false);
             backgroundA.SetActive(false);
             camEffectA.SetActive(false);
+            lightA.SetActive(false);
 
             platformsB.SetActive(true);
             backgroundB.SetActive(true);
             camEffectB.SetActive(true);
+            lightB.SetActive(true);
+
+            playerLight.SetActive(false);
         }
 
     }

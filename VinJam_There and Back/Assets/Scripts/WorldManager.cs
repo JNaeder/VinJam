@@ -5,10 +5,23 @@ using UnityEngine;
 public class WorldManager : MonoBehaviour
 {
 
-    public static string currentWorld;
+    public string currentWorld;
+
+    public static WorldManager inst;
+
     // Start is called before the first frame update
     void Start()
     {
+        if (inst == null)
+        {
+            inst = this;
+        }
+        else {
+            Destroy(this);
+        }
+
+        DontDestroyOnLoad(this);
+
         
     }
 
@@ -18,7 +31,7 @@ public class WorldManager : MonoBehaviour
         
     }
 
-    public static void ChangeCurrentWorld(string newWorld) {
+    public void ChangeCurrentWorld(string newWorld) {
         currentWorld = newWorld;
 
 

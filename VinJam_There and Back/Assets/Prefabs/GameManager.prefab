@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7973427091402295724}
   - component: {fileID: 5791328534928647324}
   - component: {fileID: 7973427091402295725}
+  - component: {fileID: 1113536833}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,6 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c44a75b8edadf4dd78c41c083e43f269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalDiamonds: 0
+  diamondsInLevel: 0
+  levelName: 'Level 1: The Tutorial'
 --- !u!114 &7973427091402295725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,3 +64,24 @@ MonoBehaviour:
   platformsB: {fileID: 0}
   backgroundA: {fileID: 0}
   backgroundB: {fileID: 0}
+  camEffectA: {fileID: 0}
+  camEffectB: {fileID: 0}
+  lightA: {fileID: 0}
+  lightB: {fileID: 0}
+  playerLight: {fileID: 0}
+  timeSpeed: 0.3
+  pauseTimer: 0.5
+  changeWorldsSound: event:/ChangeWorlds
+  isWorldA: 0
+--- !u!114 &1113536833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973427091402295730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fed283287fce7842aef90e03e4b4a53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

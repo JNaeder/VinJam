@@ -3,11 +3,17 @@ using FMODUnity;
 
 public class ResetTrigger : MonoBehaviour
 {
+    ParticleManager ps;
 
     public Transform resetPosition;
 
     [FMODUnity.EventRef]
     public string resetSound;
+
+    private void Start()
+    {
+        ps = FindObjectOfType<ParticleManager>();
+    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -20,7 +26,9 @@ public class ResetTrigger : MonoBehaviour
     }
 
     void ResetPlayerPosition(MainGuy_Movement guy) {
+        ps.StopSystems();
         guy.transform.position = resetPosition.position;
+        ps.PlaySystem();
         FMODUnity.RuntimeManager.PlayOneShot(resetSound);
 
     }
