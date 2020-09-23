@@ -368,7 +368,7 @@ MonoBehaviour:
   HasSourceProject: 1
   HasPlatforms: 1
   sourceProjectPath: ../VinJam FMOD/VinJam FMOD.fspro
-  sourceBankPath: ..\VinJam FMOD\Build
+  sourceBankPath: ../VinJam FMOD/Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -510,7 +510,7 @@ MonoBehaviour:
       Value: 0
       HasValue: 0
     SampleRate:
-      Value: 48000
+      Value: 44100
       HasValue: 1
     BuildDirectory:
       Value: 

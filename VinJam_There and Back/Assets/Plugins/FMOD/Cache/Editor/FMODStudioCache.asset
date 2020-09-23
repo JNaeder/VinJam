@@ -14,13 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../VinJam FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637363111340579411
+  lastModified: 637363582480000000
   LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1124
+  FileSizes: []
   Exists: 1
 --- !u!114 &-9038541988625508603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/World
+  m_EditorClassIdentifier: 
+  Name: World
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-8930347434129809967
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -415,7 +433,7 @@ MonoBehaviour:
   - {fileID: 297222195030918761}
   StringsBanks:
   - {fileID: -9213372786902169707}
-  stringsBankWriteTime: 637363111340579411
+  stringsBankWriteTime: 637363582480000000
   cacheVersion: 5
 --- !u!114 &165020684853730175
 MonoBehaviour:
@@ -494,7 +512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../VinJam FMOD/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637363111340479423
+  lastModified: 637363582480000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -851,7 +869,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -4101155970221604154}
+  - {fileID: -8930347434129809967}
   MinDistance: 0
   MaxDistance: 0
   Length: 140487

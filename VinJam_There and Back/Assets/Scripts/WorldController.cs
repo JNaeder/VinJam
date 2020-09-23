@@ -16,7 +16,7 @@ public class WorldController : MonoBehaviour
     [FMODUnity.EventRef]
     public string changeWorldsSound;
 
-    [HideInInspector]
+    
     public bool isWorldA;
     bool isPaused;
 
@@ -73,6 +73,7 @@ public class WorldController : MonoBehaviour
             if (isWorldA)
             {
                 SwitchWorld("A");
+                
             }
             else {
                 SwitchWorld("B");
@@ -85,6 +86,8 @@ public class WorldController : MonoBehaviour
 
 
     void SwitchWorld(string letter) {
+        wm.currentWorld = letter;
+
         if (letter == "A")
         {
             platformsB.SetActive(false);

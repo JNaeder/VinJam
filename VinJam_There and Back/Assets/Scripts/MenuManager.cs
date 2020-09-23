@@ -58,6 +58,7 @@ public class MenuManager : MonoBehaviour
         SetTimeScale(1);
         pauseScreen.SetActive(false);
         controlsScreen.SetActive(false);
+        isPaused = false;
 
     }
 

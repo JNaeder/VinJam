@@ -41,12 +41,16 @@ public class MusicManager : MonoBehaviour
 
 
     void SetWorldParameter() {
-        if (FindObjectOfType<WorldController>().isWorldA)
+        if (FindObjectOfType<WorldController>() != null)
         {
-            musicInst.setParameterByName("World", 0);
-        }
-        else {
-            musicInst.setParameterByName("World", 1);
+            if (FindObjectOfType<WorldController>().isWorldA)
+            {
+                musicInst.setParameterByName("World", 0);
+            }
+            else
+            {
+                musicInst.setParameterByName("World", 1);
+            }
         }
 
     }
