@@ -170,7 +170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -131.9}
+  m_AnchoredPosition: {x: 0, y: -95}
   m_SizeDelta: {x: 138.07648, y: 69.03824}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1753813079057403826
@@ -359,7 +359,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6557862667947993836
 RectTransform:
   m_ObjectHideFlags: 0
@@ -550,7 +550,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Keyboard Controls
+  m_text: Controls
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
   m_sharedMaterial: {fileID: -7018482689393085787, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
@@ -1124,7 +1124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3553888442709424006
 RectTransform:
   m_ObjectHideFlags: 0

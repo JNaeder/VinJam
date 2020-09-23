@@ -1,19 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class MenuManager : MonoBehaviour
 {
     public GameObject pauseScreen;
     public GameObject controlsScreen;
 
+    [FMODUnity.EventRef]
+    public string uiHoverSound, uiClickSound;
+
     public bool isPaused;
 
     LevelManager lm;
+    WorldManager wm;
 
     private void Start()
     {
         lm = FindObjectOfType<LevelManager>();
+        wm = FindObjectOfType<WorldManager>();
     }
 
     // Update is called once per frame
@@ -29,10 +35,11 @@ public class MenuManager : MonoBehaviour
             isPaused = !isPaused;
             if (isPaused)
             {
-
+                PlayUIClickSound();
                 ShowPauseScreen();
             }
             else {
+                PlayUIClickSound();
                 HidePauseScreen();
             }
         
@@ -69,7 +76,16 @@ public class MenuManager : MonoBehaviour
     }
 
     public void BackToMainMenu() {
+        wm.currentWorld = "A";
         lm.LoadSpecificScene(0);
 
+    }
+
+    public void PlayUIHoverSound() {
+        FMODUnity.RuntimeManager.PlayOneShot(uiHoverSound);
+    }
+
+    public void PlayUIClickSound() {
+        FMODUnity.RuntimeManager.PlayOneShot(uiClickSound);
     }
 }
