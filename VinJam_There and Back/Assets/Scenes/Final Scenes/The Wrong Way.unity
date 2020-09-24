@@ -62101,10 +62101,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 6495270478373030705, guid: 21d5fa34a76d9420d816222c49c7847f, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 8042815050804396402, guid: 21d5fa34a76d9420d816222c49c7847f, type: 3}
       propertyPath: m_Name
       value: Canvas

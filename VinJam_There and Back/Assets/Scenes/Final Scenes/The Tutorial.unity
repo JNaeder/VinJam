@@ -67180,10 +67180,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4035054150014519433, guid: 21d5fa34a76d9420d816222c49c7847f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6495270478373030705, guid: 21d5fa34a76d9420d816222c49c7847f, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6743599434552152452, guid: 21d5fa34a76d9420d816222c49c7847f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8042815050804396402, guid: 21d5fa34a76d9420d816222c49c7847f, type: 3}
       propertyPath: m_Name
       value: Canvas

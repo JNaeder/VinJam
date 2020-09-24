@@ -20238,7 +20238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use this ability to travese all 11 levels in the world, and collect the
+  m_text: Use this ability to travese all 10 levels in the world, and collect the
     things most precious to you. The mementos of your family.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}

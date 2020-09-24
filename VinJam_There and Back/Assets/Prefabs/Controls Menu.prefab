@@ -552,8 +552,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Controls
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
-  m_sharedMaterial: {fileID: -7018482689393085787, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dae31c9f9048a49c1872280e16f40af9, type: 2}
+  m_sharedMaterial: {fileID: 1602542256015588596, guid: dae31c9f9048a49c1872280e16f40af9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -998,8 +998,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
-  m_sharedMaterial: {fileID: -7018482689393085787, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dae31c9f9048a49c1872280e16f40af9, type: 2}
+  m_sharedMaterial: {fileID: 1602542256015588596, guid: dae31c9f9048a49c1872280e16f40af9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1324,8 +1324,8 @@ MonoBehaviour:
     Esc
     - Pause'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
-  m_sharedMaterial: {fileID: -7018482689393085787, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dae31c9f9048a49c1872280e16f40af9, type: 2}
+  m_sharedMaterial: {fileID: 1602542256015588596, guid: dae31c9f9048a49c1872280e16f40af9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

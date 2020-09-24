@@ -33,9 +33,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Final Scenes/The Wrong Way.unity
     guid: ca236b66ae012432aa69d660722d16d0
   - enabled: 1
-    path: Assets/Scenes/Final Scenes/The Suicides.unity
-    guid: fbc10d2af01d048bfacf574c95949b9e
-  - enabled: 1
     path: Assets/Scenes/Final Scenes/The Stairway To Hevean.unity
     guid: 34cba3cdffb2e44b1b678a0ec437f3ab
   - enabled: 1
