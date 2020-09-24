@@ -365,8 +365,8 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   SwitchSettingsMigration: 1
-  HasSourceProject: 0
-  HasPlatforms: 0
+  HasSourceProject: 1
+  HasPlatforms: 1
   sourceProjectPath: ../VinJam FMOD/VinJam FMOD.fspro
   sourceBankPath: ../VinJam FMOD/Build
   SourceBankPathUnformatted: 

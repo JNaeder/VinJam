@@ -6886,8 +6886,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In the year 2021, a terrible nuclear radiation accident devastated the
-    world...
+  m_text: In the year 2021, a terrible nuclear accident devastated the world...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
   m_sharedMaterial: {fileID: -7018482689393085787, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
@@ -7248,7 +7247,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: It destroyed entire civilizations. The few people who survived were forced
-    to live off of radioactive wastelands...
+    to live off of the radioactive wastelands...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
   m_sharedMaterial: {fileID: -7018482689393085787, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
@@ -19391,8 +19390,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 180, y: -159}
-  m_SizeDelta: {x: 103.914764, y: 51.957382}
+  m_AnchoredPosition: {x: 189, y: -91}
+  m_SizeDelta: {x: 167.91476, y: 87.95738}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447627203
 MonoBehaviour:
@@ -19783,10 +19782,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -20239,8 +20238,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use this mutant ability to collect all of the mementos about your past
-    life.
+  m_text: Use this mutant ability to collect all the things most precious to you.
+    The mementos of your family.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
   m_sharedMaterial: {fileID: -7018482689393085787, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
@@ -20374,8 +20373,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Everyone close to you has passed. You are the only one in your family left
-    alive. Only mementos of them remain...
+  m_text: You survived. But everyone close to you passed. You are the only one in
+    your family left alive. Only mementos of them remain scattered throughout the
+    world...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
   m_sharedMaterial: {fileID: -7018482689393085787, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}

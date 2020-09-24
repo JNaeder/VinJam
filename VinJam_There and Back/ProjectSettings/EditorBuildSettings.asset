@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartScene.unity
-    guid: 2229fa91fca634ace90431461bb8c5cf
-  - enabled: 1
     path: Assets/Scenes/Final Scenes/Main Menu.unity
     guid: 0c016c828da13df46b36aa4147c80ff8
   - enabled: 1
@@ -18,11 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Final Scenes/The Begginning.unity
     guid: 90e241d801a0bd344b872ed44a888ed1
   - enabled: 1
-    path: Assets/Scenes/Final Scenes/The Jump.unity
-    guid: 03cbadb57036c38488a59172616d086c
-  - enabled: 1
     path: Assets/Scenes/Final Scenes/The Pit.unity
     guid: 4863626708f35436d99743dd03bfb5d3
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/The Tiny Platforms.unity
+    guid: 03cbadb57036c38488a59172616d086c
   - enabled: 1
     path: Assets/Scenes/Final Scenes/The Bridge.unity
     guid: cb1e31bb2949bb04789763c3beedb510
@@ -38,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final Scenes/The Suicides.unity
     guid: fbc10d2af01d048bfacf574c95949b9e
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/The Stairway To Hevean.unity
+    guid: 34cba3cdffb2e44b1b678a0ec437f3ab
   - enabled: 1
     path: Assets/Scenes/Final Scenes/End Menu.unity
     guid: 0ec30f265b426994f85272493cd0c712
