@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../VinJam FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637364563972661310
+  lastModified: 637364909530000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -346,6 +346,66 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 377
+--- !u!114 &-3522518969635504610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/World
+  m_EditorClassIdentifier: 
+  Name: World
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-1902904021102023999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/World
+  m_EditorClassIdentifier: 
+  Name: World
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-1610139141534185177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/World
+  m_EditorClassIdentifier: 
+  Name: World
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-1451224414570460409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,6 +446,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-352707736392608600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/World
+  m_EditorClassIdentifier: 
+  Name: World
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-315258234392906220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,6 +549,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 701
+--- !u!114 &-201195604449816524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/World
+  m_EditorClassIdentifier: 
+  Name: World
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-185144170576039432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,7 +619,7 @@ MonoBehaviour:
   - {fileID: 297222195030918761}
   StringsBanks:
   - {fileID: -9213372786902169707}
-  stringsBankWriteTime: 637364563972661310
+  stringsBankWriteTime: 637364909530000000
   cacheVersion: 5
 --- !u!114 &165020684853730175
 MonoBehaviour:
@@ -598,7 +698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../VinJam FMOD/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637364563972561295
+  lastModified: 637364909530000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -705,6 +805,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 777
+--- !u!114 &1313147643096895014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/World
+  m_EditorClassIdentifier: 
+  Name: World
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &1335516418910835572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -792,6 +912,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1811
+--- !u!114 &3611272544473717080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/World
+  m_EditorClassIdentifier: 
+  Name: World
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &4059142816238824500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1015,7 +1155,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 4615215343287522714}
+  - {fileID: 1313147643096895014}
   MinDistance: 0
   MaxDistance: 0
   Length: 140487

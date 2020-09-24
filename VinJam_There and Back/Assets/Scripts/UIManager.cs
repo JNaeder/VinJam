@@ -5,6 +5,7 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     GameManager gM;
+    LevelManager lm;
 
     public TMP_Text diamondNum;
     public TMP_Text levelName;
@@ -13,13 +14,14 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         gM = FindObjectOfType<GameManager>();
+        lm = FindObjectOfType<LevelManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
         diamondNum.text = gM.totalDiamonds.ToString() + "/" + gM.diamondsInLevel.ToString();
-        levelName.text = gM.levelName;
+        levelName.text =  lm.FindCurrentSceneNum() + ": " + gM.levelName;
 
     }
 
