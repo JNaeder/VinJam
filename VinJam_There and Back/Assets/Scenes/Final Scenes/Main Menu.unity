@@ -824,8 +824,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You gained a special ability. You were now able to shift through space
-    time into the past...
+  m_text: You gained the special ability to shift through space time. You can shift
+    into the past, and then back to the present again...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
   m_sharedMaterial: {fileID: -7018482689393085787, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
@@ -19390,7 +19390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189, y: -91}
+  m_AnchoredPosition: {x: 189, y: -148}
   m_SizeDelta: {x: 167.91476, y: 87.95738}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447627203
@@ -20238,8 +20238,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use this mutant ability to collect all the things most precious to you.
-    The mementos of your family.
+  m_text: Use this ability to travese all 11 levels in the world, and collect the
+    things most precious to you. The mementos of your family.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
   m_sharedMaterial: {fileID: -7018482689393085787, guid: 9ae63dd75e24a204b980f54977efe04e, type: 2}
@@ -31909,6 +31909,14 @@ PrefabInstance:
       propertyPath: playerLight
       value: 
       objectReference: {fileID: 1921633718}
+    - target: {fileID: 7973427091402295725, guid: ec2f33ca69778444fa0427b6ed64d687, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973427091402295725, guid: ec2f33ca69778444fa0427b6ed64d687, type: 3}
+      propertyPath: changeWorldsSound
+      value: event:/ChangeWorlds
+      objectReference: {fileID: 0}
     - target: {fileID: 7973427091402295730, guid: ec2f33ca69778444fa0427b6ed64d687, type: 3}
       propertyPath: m_Name
       value: GameManager

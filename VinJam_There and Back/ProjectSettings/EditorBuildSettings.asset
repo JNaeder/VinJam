@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Final Scenes/The Stairway To Hevean.unity
     guid: 34cba3cdffb2e44b1b678a0ec437f3ab
   - enabled: 1
+    path: Assets/Scenes/Final Scenes/The End.unity
+    guid: 4a45ee16e8bcc454596c0ed2954271b2
+  - enabled: 1
     path: Assets/Scenes/Final Scenes/End Menu.unity
     guid: 0ec30f265b426994f85272493cd0c712
   m_configObjects: {}
